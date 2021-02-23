@@ -1,6 +1,4 @@
-# codepath_homework
 
-See branches for assignments.
 
 **Homework Instructions**: 
 

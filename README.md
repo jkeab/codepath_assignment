@@ -12,7 +12,7 @@ Time spent: **X** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 
   - [X] GIF Walkthrough: <img src="CVE-2019-9787.gif" alt="CVE">
-  - [ ] Steps to recreate: 
+  - [X] Steps to recreate: 1) Create a page. 2) Go to created page and leave "<IMGSRC="#"ONERROR="alert('XSS')"/>" as a comment to exploit the vulnerability. Refresh page and javascript will be run. 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 ### 2. (Required) Vulnerability Name or ID

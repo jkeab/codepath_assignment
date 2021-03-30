@@ -8,7 +8,7 @@ Time spent: **X** hours spent in total
 
 ### 1. (Required) Vulnerability Name or ID: XSS 
   - [X] Summary: Client side XSS vulnerability in comment field of page
-    - Vulnerability types:
+    - Vulnerability types: Execute Code Cross Site Scripting CSRF
     - Tested in version:
     - Fixed in version: 
   - [ ] GIF Walkthrough: 

@@ -56,7 +56,7 @@ GIFs created with [Kap](https://getkap.co).
 
 ## Notes
 
-Describe any challenges encountered while doing the work
+Difficulty finding SQLi attacks and exploiting CSRF vulnerabilties. Previous labs are helpful in terms of explaining how the attack works but exploiting these vulnerabilies with real applications is much different. However, online resources did help a lot
 
 ## License
 

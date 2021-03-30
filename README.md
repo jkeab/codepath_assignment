@@ -11,7 +11,7 @@ Time spent: **X** hours spent in total
     - Vulnerability types: Execute Code Cross Site Scripting CSRF
     - Tested in version: 4.2
     - Fixed in version: 
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: <img src="CVE-2019-9787" alt="CVE">
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)

@@ -6,8 +6,8 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-### 1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
+### 1. (Required) Vulnerability Name or ID: XSS 
+  - [X] Summary: Client side XSS vulnerability in comment field of page
     - Vulnerability types:
     - Tested in version:
     - Fixed in version: 

@@ -12,18 +12,24 @@ Time spent: **X** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 5.1.1
   - [X] GIF Walkthrough: <img src="CVE-2019-9787.gif" alt="CVE">
-  - [X] Steps to recreate: 1) Create a page. 2) Go to created page and leave "<IMGSRC="#"ONERROR="alert('XSS')"/>" as a comment to exploit the vulnerability. Refresh page and javascript will be run. 
+  - [X] Steps to recreate: 
+    1) Create a page. 
+    2) 2) Go to created page and leave "<IMGSRC="#"ONERROR="alert('XSS')"/>" as a comment to exploit the vulnerability. 
+    3) Refresh page and javascript will be run. 
   - [X] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/blob/master/wp-admin/includes/ajax-actions.php)
 ### 2. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](http://wpdistillery.vm/#comment-3)
+  - [X] Summary:Cross-site scripting (XSS) vulnerability in the media_handle_upload function in wp-admin/includes/media.php in WordPress before 4.6.1 might allow remote attackers to inject arbitrary web script or HTML by tricking an administrator into uploading an image file that has a crafted filename.  
+    - Vulnerability types: Cross Site Scripting
+    - Tested in version: 4.2
+    - Fixed in version: 4.6.1
+  - [X] GIF Walkthrough:  <img src="XSS2.gif" alt="XSS">
+  - [X] Steps to recreate: 
+    1)Send a file with a malicous name to admin/victim
+    2) Get admin to create a post using the maliciously named photo (attatchemnt page)
+    3) Once uploaded and viewed within WordPress the script code is executed
+  - [X] Affected source code:
+    - [Link 1](https://github.com/WordPress/WordPress/commit/c9e60dab176635d4bfaaf431c0ea891e4726d6e0
 ### 3. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:

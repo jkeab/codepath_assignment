@@ -14,7 +14,7 @@ Time spent: **X** hours spent in total
   - [X] GIF Walkthrough: <img src="CVE-2019-9787.gif" alt="CVE">
   - [X] Steps to recreate: 1) Create a page. 2) Go to created page and leave "<IMGSRC="#"ONERROR="alert('XSS')"/>" as a comment to exploit the vulnerability. Refresh page and javascript will be run. 
   - [X] Affected source code:
-    - [Link 1](http://wp-includes/comment.php
+    - [Link 1](https://github.com/WordPress/WordPress/blob/master/wp-admin/includes/ajax-actions.php)
 ### 2. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:

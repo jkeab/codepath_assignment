@@ -6,7 +6,7 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-### 1. (Required) Vulnerability Name or ID: XSS 
+### 1. (Required) Vulnerability Name or ID: CVE 2019-9787
   - [X] Summary: Client side XSS vulnerability in comment field of page
     - Vulnerability types: Execute Code Cross Site Scripting CSRF
     - Tested in version: 4.2
@@ -18,7 +18,7 @@ Time spent: **X** hours spent in total
     3) Refresh page and javascript will be run. 
   - [X] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/blob/master/wp-admin/includes/ajax-actions.php)
-### 2. (Required) Vulnerability Name or ID
+### 2. (Required) Vulnerability Name or ID CVE 2016-7168
   - [X] Summary:Cross-site scripting (XSS) vulnerability in the media_handle_upload function in wp-admin/includes/media.php in WordPress before 4.6.1 might allow remote attackers to inject arbitrary web script or HTML by tricking an administrator into uploading an image file that has a crafted filename.  
     - Vulnerability types: Cross Site Scripting
     - Tested in version: 4.2
@@ -29,7 +29,7 @@ Time spent: **X** hours spent in total
     2) Get admin to create a post using the maliciously named photo (attatchemnt page)
     3) Once uploaded and viewed within WordPress the script code is executed
   - [X] Affected source code:
-    - [Link 1](https://github.com/WordPress/WordPress/commit/c9e60dab176635d4bfaaf431c0ea891e4726d6e0
+    - [Link 1](https://github.com/WordPress/WordPress/commit/c9e60dab176635d4bfaaf431c0ea891e4726d6e0)
 ### 3. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:

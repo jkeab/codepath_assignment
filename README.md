@@ -10,7 +10,7 @@ Time spent: **X** hours spent in total
   - [X] Summary: Client side XSS vulnerability in comment field of page
     - Vulnerability types: Execute Code Cross Site Scripting CSRF
     - Tested in version: 4.2
-    - Fixed in version: 
+    - Fixed in version: 5.1.1
   - [X] GIF Walkthrough: <img src="CVE-2019-9787.gif" alt="CVE">
   - [X] Steps to recreate: 1) Create a page. 2) Go to created page and leave "<IMGSRC="#"ONERROR="alert('XSS')"/>" as a comment to exploit the vulnerability. Refresh page and javascript will be run. 
   - [ ] Affected source code:

@@ -30,15 +30,18 @@ Time spent: **X** hours spent in total
     3) Once uploaded and viewed within WordPress the script code is executed
   - [X] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/c9e60dab176635d4bfaaf431c0ea891e4726d6e0)
-### 3. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php) 
+### 3. (Required) Vulnerability Name or ID User Enumeration
+  - [X] Summary: Using WPScan, all users associated with the WordPress page are made available to the attacker
+    - Vulnerability types: Enumeration
+    - Tested in version: 4.2
+    - Fixed in version: N/A
+  - [X] GIF Walkthrough: <img src="enumeration.gif" alt="XSS">
+  - [X] Steps to recreate: 
+    1)Download WPScan 
+    2)Enter the following command into the terminal: wpscan --url [target IP or URL] --enumerate u
+    3)Analyze output for users associated with the provided URL/IP
+  - [X] Affected source code:N/A
+    - [Link 1](N/A) 
 
 ## Assets
 

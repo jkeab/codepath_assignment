@@ -46,9 +46,9 @@ Description:
 
 ## Red
 
-Vulnerability #1: __________________
+Vulnerability #1: IDOR
 
-Description:
+Description: the IDs of the salepeople are able to be enumerated through on the public site once the pattern of is recognized. ID 10 should not be served to the user
 
 <img src="red-vuln1.gif">
 

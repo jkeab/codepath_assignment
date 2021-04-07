@@ -37,9 +37,9 @@ Description: An attacker is able to gain information about which users are valid
 
 <img src="green-vuln1.gif">
 
-Vulnerability #2: __________________
+Vulnerability #2: Stored XSS
 
-Description:
+Description: The green site is vulnerabile to a stored XSS attack. The web app doesn't seem to use proper validation or escaping, thus allowing the attacker to inject javascript and causing the browser to execute the code as it is interpreting the page where the script is stored. 
 
 <img src="green-vuln2.gif">
 

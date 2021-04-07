@@ -17,9 +17,9 @@ Each color is vulnerable to only 2 of the 6 possible exploits. First discover wh
 
 ## Blue
 
-Vulnerability #1: __________________
+Vulnerability #1: SQLi
 
-Description:
+Description: The salesperson.php page is vulnerable to a time-based blind SQLi attack. Using the query: "id=1' and if(1=1,sleep(4),1)%20--+", the MySQL db sleeps for 4 seconds before processing the GET request. 1=1 is a tautology and thus evaluates to True, the execution of the sleep timer indicates that the result of the query is true. 
 
 <img src="blue-vuln1.gif">
 

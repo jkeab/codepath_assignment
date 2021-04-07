@@ -52,9 +52,9 @@ Description: the IDs of the salepeople are able to be enumerated through on the 
 
 <img src="red-vuln1.gif">
 
-Vulnerability #2: __________________
+Vulnerability #2: CSRF
 
-Description:
+Description: Create a file with html code pointing to the "edit user" form in the admin section. The written code will modify the value of the chosen parameter once the unsuspecting admin vists the webpage. The victim is tricked into carrying out an unintentional action
 
 <img src="red-vuln2.gif">
 

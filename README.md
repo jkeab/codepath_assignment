@@ -23,7 +23,8 @@ Description: The salesperson.php page is vulnerable to a time-based blind SQLi a
 
 <img src="blue-vuln1.gif">
 
-Vulnerability #2: __________________
+Vulnerability #2: Session Hijacking/Fixation
+
 
 Description:
 

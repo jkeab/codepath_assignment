@@ -59,6 +59,12 @@ Description: Create a file with html code pointing to the "edit user" form in th
 
 <img src="red-vuln2.gif">
 
+## Bonus
+
+Bonus Objective 2a:
+
+<img src="green-vuln3.gif">
+
 
 ## Notes
 

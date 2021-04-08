@@ -63,7 +63,7 @@ Description: Create a file with html code pointing to the "edit user" form in th
 
 Bonus Objective 2a:
 
-<img src="green-vuln3.gif">
+<img src="green-vul3.gif">
 
 
 ## Notes

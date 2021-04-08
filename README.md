@@ -23,10 +23,10 @@ Description: The salesperson.php page is vulnerable to a time-based blind SQLi a
 
 <img src="blue-vuln1.gif">
 
-Vulnerability #2: Session Hijacking/Fixation
+Vulnerability #2: Session Hijacking
 
 
-Description:
+Description: use the provided "public/hacktools/change_session_id.php" script to set the phpsession to any value once the victim is logged in. From another browser, open the same php script and set the session id to that of the victim. Refresh the page and access the login menu, the session now matches that of the victim and authentication is confirmed allowing the attacker access to the admin page and can manipulate data as desired.
 
 <img src="blue-vuln2.gif">
 

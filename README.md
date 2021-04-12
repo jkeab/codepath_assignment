@@ -34,7 +34,7 @@ Description: use the provided "public/hacktools/change_session_id.php" script to
 
 Vulnerability #1: User Enumeration
 
-Description: An attacker is able to gain information about which users are valid in the database via the response provided. If a specific username is valid but the password is incorrect, the error response from the server will be in bold. However, if the username is not valid, the error response from the server will not be in bold. 
+Description: An attacker is able to gain information about which users are valid in the database via the response provided. If a specific username is valid but the password is incorrect, the error response from the server will be in bold due to the inherited formatting of span.failed   she. However, if the username is not valid, the error response from the server will not be in bold. 
 
 <img src="green-vuln1.gif">
 

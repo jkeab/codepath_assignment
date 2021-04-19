@@ -1,71 +1,48 @@
-# Project 8 - Pentesting Live Targets
+# Honeypot Assignment
 
-Time spent: **8** hours spent in total
+**Time spent:** **X** hours spent in total
 
-> Objective: Identify vulnerabilities in three different versions of the Globitek website: blue, green, and red.
+**Objective:** Create a honeynet using MHN-Admin. Present your findings as if you were requested to give a brief report of the current state of Internet security. Assume that your audience is a current employer who is questioning why the company should allocate anymore resources to the IT security team.
 
-The six possible exploits are:
+### MHN-Admin Deployment (Required)
 
-* Username Enumeration
-* Insecure Direct Object Reference (IDOR)
-* SQL Injection (SQLi)
-* Cross-Site Scripting (XSS)
-* Cross-Site Request Forgery (CSRF)
-* Session Hijacking/Fixation
+**Summary:** How did you deploy it? Did you use GCP, AWS, Azure, Vagrant, VirtualBox, etc.?
 
-Each color is vulnerable to only 2 of the 6 possible exploits. First discover which color has the specific vulnerability, then write a short description of how to exploit it, and finally demonstrate it using screenshots compiled into a GIF.
+<img src="mhn-admin.gif">
 
-## Blue
+### Dionaea Honeypot Deployment (Required)
 
-Vulnerability #1: SQLi
+**Summary:** Briefly in your own words, what does dionaea do?
 
-Description: The salesperson.php page is vulnerable to a time-based blind SQLi attack. Using the query: "id=1' and if(1=1,sleep(4),1)%20--+", the MySQL db sleeps for 4 seconds before processing the GET request. 1=1 is a tautology and thus evaluates to True, the execution of the sleep timer indicates that the result of the query is true. An attacker can use this vulnerability to gain information on the db depending on whether or not the db returns with a delay.
+<img src="dionaea-honeypot.gif">
 
-<img src="blue-vuln1.gif">
+### Database Backup (Required) 
 
-Vulnerability #2: Session Hijacking
+**Summary:** What is the RDBMS that MHN-Admin uses? What information does the exported JSON file record?
 
+*Be sure to upload session.json directly to this GitHub repo/branch in order to get full credit.*
 
-Description: use the provided "public/hacktools/change_session_id.php" script to set the phpsession to any value once the victim is logged in. From another browser, open the same php script and set the session id to that of the victim. Refresh the page and access the login menu, the session now matches that of the victim and authentication is confirmed allowing the attacker access to the admin page and can manipulate data as desired.
+### Deploying Additional Honeypot(s) (Optional)
 
-<img src="blue-vuln2.gif">
+#### X Honeypot
 
-## Green
+**Summary:** What does this honeypot simulate and do for a security researcher?
 
-Vulnerability #1: User Enumeration
+<img src="x-honeypot.gif">
 
-Description: An attacker is able to gain information about which users are valid in the database via the response provided. If a specific username is valid but the password is incorrect, the error response from the server will be in bold due to the inherited formatting of span.failed. However, if the username is not valid, the error response from the server will not be in bold. 
+### Malware Capture and Identification (Optional)
 
-<img src="green-vuln1.gif">
+#### X Malware
 
-Vulnerability #2: Stored XSS
+**Summary:** How did you find it? Which honeypot captured it? What does each malware do?
 
-Description: The green site is vulnerabile to a stored XSS attack. The web app doesn't seem to use proper validation or escaping, thus allowing the attacker to inject javascript and causing the browser to execute the code as it is interpreting the page where the script is stored. 
+MD5 Hash: *Run `md5sum` on the file and record the hash here.*
 
-<img src="green-vuln2.gif">
+SHA1 Hash: *Run `sha1sum` on the file and record the hash here.*
 
-
-## Red
-
-Vulnerability #1: IDOR
-
-Description: the IDs of the salepeople are able to be enumerated through on the public site once the pattern of is recognized. ID 10 should not be served to the user
-
-<img src="red-vuln1.gif">
-
-Vulnerability #2: CSRF
-
-Description: Create a file with html code pointing to the "edit user" form in the admin section. The written code will modify the value of the chosen parameter once the unsuspecting admin vists the webpage. The victim is tricked into carrying out an unintentional action
-
-<img src="red-vuln2.gif">
-
-## Bonus
-
-Bonus Objective 2a:
-
-<img src="green-vul3.gif">
-
+<img src="x-malware.gif">
 
 ## Notes
 
-Describe any challenges encountered while doing the work
+Describe any challenges encountered while doing the assignment.
+

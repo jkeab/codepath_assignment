@@ -1,6 +1,6 @@
 # Honeypot Assignment
 
-**Time spent:** **X** hours spent in total
+**Time spent:** **7** hours spent in total
 
 **Objective:** Create a honeynet using MHN-Admin. Present your findings as if you were requested to give a brief report of the current state of Internet security. Assume that your audience is a current employer who is questioning why the company should allocate anymore resources to the IT security team.
 
@@ -41,8 +41,4 @@ MD5 Hash: *Run `md5sum` on the file and record the hash here.*
 SHA1 Hash: *Run `sha1sum` on the file and record the hash here.*
 
 <img src="x-malware.gif">
-
-## Notes
-
-Describe any challenges encountered while doing the assignment.
 

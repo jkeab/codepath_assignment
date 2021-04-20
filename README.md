@@ -42,6 +42,6 @@ SHA1 Hash: *Run `sha1sum` on the file and record the hash here.*
 
 <img src="x-malware.gif">
 
-### Notes
+## Notes
 
 Had issues with gcloud SSH. Resolved after troubleshooting and removing old SSH keys and running "gcloud compute SSH mhn-admin" again. 

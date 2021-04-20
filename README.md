@@ -6,19 +6,19 @@
 
 ### MHN-Admin Deployment (Required)
 
-**Summary:** Deployed MHN-Admin with gcloud 
+**Summary:** Deployed MHN-Admin with Google's gcloud platform. MHN-admin acts an admin VM that is used to deploy/manage many different honeypots that serve many different purposes from one location. 
 
 <img src="mhn-admin.gif">
 
 ### Dionaea Honeypot Deployment (Required)
 
-**Summary:** Dionaea is a honeypot that has the goal of trapping malware that is exploiting vulnerabilties exposed by services offered to a network (i.e. file transfer VoIP. e-mail, etc)
+**Summary:** Dionaea is a honeypot that has the goal of trapping malware that is exploiting vulnerabilties exposed by services offered to a network (i.e. file transfer VoIP. e-mail, etc). 
 
 <img src="dionaea-honeypot.gif">
 
 ### Database Backup (Required) 
 
-**Summary:** What is the RDBMS that MHN-Admin uses? What information does the exported JSON file record?
+**Summary:** MHN-Admin uses SQLite as the relational database management system. Additionally, the exported JSON file record contains logs of attacks launched at the honepots, including date, src and dst port, protocol, honeypot name, and md5/sha-512 hashes of malware. 
 
 *Be sure to upload session.json directly to this GitHub repo/branch in order to get full credit.*
 

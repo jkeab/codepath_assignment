@@ -12,7 +12,7 @@
 
 ### Dionaea Honeypot Deployment (Required)
 
-**Summary:** Briefly in your own words, what does dionaea do?
+**Summary:** Dionaea is a honeypot that has the goal of trapping malware that is exploiting vulnerabilties exposed by services offered to a network (i.e. file transfer VoIP. e-mail, etc)
 
 <img src="dionaea-honeypot.gif">
 

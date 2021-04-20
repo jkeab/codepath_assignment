@@ -26,9 +26,9 @@
 
 #### X Honeypot
 
-**Summary:** What does this honeypot simulate and do for a security researcher?
+**Summary:** What does this honeypot simulate and do for a security researcher? Conpot simulates the behavior of a system under constant load to trick the attacker into thinking they have discovered a complex industrial control system. It allows a security researcher to gain insight into how advisaries carry out attacks on important infrasutrctre. 
 
-<img src="x-honeypot.gif">
+<img src="conpot-honeypot.gif">
 
 ### Malware Capture and Identification (Optional)
 
